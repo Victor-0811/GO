@@ -1,0 +1,16 @@
+
+@import "normalize.css";
+@import "global.css";
+
+
+@import "blocks/banner.css";
+@import "blocks/halls.css";
+@import "blocks/booking.css";
+@import "blocks/form.css";
+@import "blocks/about.css";
+@import "blocks/faq.css";
+@import "blocks/contacts.css";
+@import "blocks/social.css";
+@import "blocks/title.css";
+@import "blocks/reviews.css";
+@import "blocks/item.css";

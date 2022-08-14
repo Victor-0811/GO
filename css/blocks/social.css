@@ -1,0 +1,8 @@
+
+.social__item {
+  display: inline-block;
+}
+
+.social__item:not(:last-child) {
+  margin: 0 27px 0 0;
+}
