@@ -1,6 +1,6 @@
 
 .banner__content {
-  background-image: url("../../img/banner/guy.png");
+  background-image: url("/img/banner/guy.png");
   background-position: 505px 65px;
   background-repeat: no-repeat;
   min-height: 823px;
