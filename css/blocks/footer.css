@@ -1,0 +1,33 @@
+
+.footer {
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
+  padding: 100px 0 0 0;
+}
+
+.footer__title {
+  margin: 0 0 40px 0;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 160px 0;
+}
+
+.footer__contacts-info {
+  margin: 0 0 40px 0;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0 0 10px 0;
+}
+
+.footer__author-name {
+  display: block;
+  margin: 0 0 5px 0;
+}

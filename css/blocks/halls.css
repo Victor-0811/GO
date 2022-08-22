@@ -3,16 +3,14 @@
   margin: 0 0 60px 0;
 }
 
-.halls__item {
-  max-width: 560px;
-  height: auto;
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 0 20px 0;
+.halls__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-.halls__item:not(:nth-child(2n)) {
-  margin: 0 20px 0 0;
+.halls__item {
+  flex: 0 1 580px;
 }
 
 .halls__pic {
@@ -28,6 +26,5 @@
   font-size: 70px;
   line-height: 80px;
   text-transform: uppercase;
-  white-space: nowrap;
   text-align: center;
 }

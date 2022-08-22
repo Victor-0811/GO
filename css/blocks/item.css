@@ -1,9 +1,11 @@
 
+.item {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .item__person {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 20px 0 0;
+  flex: 0 1 280px;
 }
 
 .item__avatar {
@@ -26,11 +28,9 @@
 }
 
 .item__description {
+  flex: 0 1 700px;
   line-height: 28px;
-  max-width: 670px;
-  display: inline-block;
-  vertical-align: top;
-  padding: 60px 0 0 0;
+  padding: 60px 0 0 20px;
 }
 
 

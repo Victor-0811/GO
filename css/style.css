@@ -3,6 +3,7 @@
 @import "global.css";
 
 
+@import "blocks/header.css";
 @import "blocks/banner.css";
 @import "blocks/halls.css";
 @import "blocks/booking.css";
@@ -14,3 +15,5 @@
 @import "blocks/title.css";
 @import "blocks/reviews.css";
 @import "blocks/item.css";
+@import "blocks/relaxation.css";
+@import "blocks/footer.css";
