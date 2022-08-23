@@ -1,6 +1,6 @@
 
 ### Переход на сайт
-< https://victor-0811.github.io/GO/
+> https://victor-0811.github.io/GO/
 
 
 ### инициализация git репозитория
