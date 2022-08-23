@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
   padding: 30px 70px;
 }
 
@@ -18,8 +19,7 @@
   margin: 0 0 20px 0;
 }
 
-.faq__circle,
-.faq__circle--active {
+.faq__circle {
   width: 46px;
   height: 46px;
   border-radius: 50%;
@@ -30,26 +30,78 @@
   flex-shrink: 0;
 }
 
-.faq__circle:before {
+.faq__circle:before,
+.faq__circle:after {
   content: "";
-  background-image: url("../../img/icon/cross.svg");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 26px;
-  height: 26px;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background-color: #6C0287;
 }
 
-.faq__item--active {
+.faq__circle:after {
+  position: relative;
+  left: 0;
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.faq__item:hover .faq__circle {
+  background-color: #6C0287;
+  border: 2px solid #6C0287;
+}
+
+.faq__item:hover .faq__circle:before,
+.faq__item:hover .faq__circle:after {
+  background-color: #ffffff;
+}
+
+.faq__item:active .faq__circle {
+  background-color: #ffffff;
+  border: 2px solid #6C0287;
+}
+
+.faq__item:active .faq__circle:before,
+.faq__item:active .faq__circle:after {
+  background-color: #6C0287;
+  transform: rotate(180deg);
+}
+
+.faq__item--bg {
   background-color: #440F51;
   color: #ffffff;
 }
 
-.faq__item--active .faq__circle {
+.faq__item--bg .faq__circle {
   border: 2px solid #ffffff;
 }
 
-.faq__item--active .faq__circle:before {
-  background-image: url("../../img/icon/cross-active.svg");
+.faq__item--bg .faq__circle:before,
+.faq__item--bg .faq__circle:after {
+  background-color: #ffffff;
 }
+
+.faq__item--bg:hover .faq__circle {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.faq__item--bg:hover .faq__circle:before,
+.faq__item--bg:hover .faq__circle:after {
+  background-color: #6C0287;
+}
+
+.faq__item--bg:active .faq__circle {
+  background-color: #6C0287;
+  border: 2px solid #ffffff;
+}
+
+.faq__item--bg:active .faq__circle:before,
+.faq__item--bg:active .faq__circle:after {
+  background-color: #ffffff;
+  transform: rotate(180deg);
+}
+
+
 

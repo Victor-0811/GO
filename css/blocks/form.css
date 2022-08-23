@@ -23,19 +23,30 @@
   white-space: nowrap;
   color: #000000;
   background-color: #FFFFFF;
+  border: 3px solid #ffffff;
   border-radius: 8px;
   cursor: pointer;
-  padding: 7px 28px;
+  padding: 5px 15px;
+}
+
+.form__choose-item:hover {
+  border: 3px solid #640AA3;
+}
+
+.form__choose-item:focus {
+  border: 3px solid #640AA3;
+}
+
+.form__choose-item:active {
+  border: 3px solid #ffffff;
+  background-color: #6C0287;
+  color: #ffffff;
 }
 
 .form__choose-radio {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-}
-
-.form__choose-radio:checked {
-  background-color: #440F51;
 }
 
 .form__input {
@@ -95,6 +106,10 @@
   opacity: 1;
 }
 
+.form__radio:focus:before {
+  outline: 1px solid #CD06FF;
+}
+
 .form__checkbox {
   appearance: none;
   position: relative;
@@ -107,6 +122,10 @@
   height: 25px;
   background-color: #ffffff;
   margin: 0 10px 0 0;
+}
+
+.form__checkbox:focus:before {
+  outline: 1px solid #CD06FF;
 }
 
 .form__checkbox:after {
@@ -148,6 +167,10 @@
   display: flex;
   gap: 50px;
   margin: 0 0 50px 0;
+}
+
+.form__datetime input:focus {
+  outline: 2px solid #CD06FF;
 }
 
 .form__datetime-group {
@@ -274,7 +297,21 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 28px;
   text-transform: uppercase;
   background: #FFFFFF;
+  border: 3px solid #ffffff;
   border-radius: 10px;
   color: #6C0287;
-  padding: 16px 47px;
+  padding: 14px 45px;
 }
+
+.form__btn:hover {
+  border: 3px solid #6C0287;
+}
+
+.form__btn:focus {
+  border: 3px solid #6C0287;
+}
+
+.form__btn:active {
+  border: 3px solid #ffffff;
+}
+
