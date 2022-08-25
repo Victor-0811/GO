@@ -59,6 +59,7 @@
   background-color: #6C0287;
   border-radius: 10px;
   padding: 25px 69px;
+  transition: background-color .2s;
 }
 
 .banner__btn:hover {
@@ -82,6 +83,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 90px;
+  transition: background-color .3s, border .3s;
 }
 
 .banner__down:after {
@@ -95,6 +97,7 @@
   border-top: 2px solid #fff;
   border-left: 2px solid #fff;
   transform: translateX(-50%) rotate(-135deg);
+  transition: border .3s;
 }
 
 .banner__down:hover:after {

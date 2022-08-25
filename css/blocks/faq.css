@@ -28,6 +28,7 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  transition: background-color .3s, border .3s;
 }
 
 .faq__circle:before,
@@ -38,6 +39,7 @@
   width: 20px;
   height: 1px;
   background-color: #6C0287;
+  transition: transform .3s;
 }
 
 .faq__circle:after {

@@ -27,6 +27,7 @@
   border-radius: 8px;
   cursor: pointer;
   padding: 5px 15px;
+  transition: background-color .3s, border .3s;
 }
 
 .form__choose-item:hover {
@@ -86,6 +87,7 @@
   background-color: #ffffff;
   border-radius: 50%;
   margin: 0 10px 0 0;
+  transition: opacity .2s;
 }
 
 .form__radio:after {
@@ -99,7 +101,7 @@
   background-color: #440F51;
   border-radius: 50%;
   opacity: 0;
-  transition: opacity .2s;
+  transition: opacity .3s;
 }
 
 .form__radio:checked:after {
@@ -113,6 +115,7 @@
 .form__checkbox {
   appearance: none;
   position: relative;
+  transition: outline .2s;
 }
 
 .form__checkbox:before {
@@ -171,6 +174,7 @@
 
 .form__datetime input:focus {
   outline: 2px solid #CD06FF;
+  transition: outline .3s;
 }
 
 .form__datetime-group {
@@ -301,6 +305,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 10px;
   color: #6C0287;
   padding: 14px 45px;
+  transition: border .3s;
 }
 
 .form__btn:hover {

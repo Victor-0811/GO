@@ -15,6 +15,11 @@
 
 .relaxation__picture {
   position: relative;
+  transition: transform .2s;
+}
+
+.relaxation__picture:hover {
+  transform: scale(1.1);
 }
 
 .relaxation__name {
