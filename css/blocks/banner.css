@@ -42,7 +42,7 @@
   font-weight: 900;
   font-size: 100px;
   line-height: 141px;
-  color: #CD06FF;
+  color: var(--accent-color2);
 }
 
 .banner__text {
@@ -77,7 +77,7 @@
 .banner__down {
   width: 97px;
   height: 97px;
-  border: 1px solid #FFFFFF;
+  border: 1px solid var(--color-text);
   border-radius: 50%;
   position: absolute;
   left: 50%;
@@ -94,8 +94,8 @@
   left: 50%;
   width: 20px;
   height: 20px;
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
+  border-top: 2px solid var(--color-text);
+  border-left: 2px solid var(--color-text);
   transform: translateX(-50%) rotate(-135deg);
   transition: border .3s;
 }
@@ -106,19 +106,19 @@
 }
 
 .banner__down:hover {
-  background-color: #ffffff;
+  background-color: var(--color-text);
 }
 
 .banner__down:focus {
-  outline: 1px solid #CD06FF;
+  outline: 1px solid var(--accent-color2);
 }
 
 .banner__down:active {
-  background-color: #CD06FF;
-  border: 1px solid #CD06FF;
+  background-color: var(--accent-color2);
+  border: 1px solid var(--accent-color2);
 }
 
 .banner__down:active:after {
-  border-top: 2px solid #ffffff;
-  border-left: 2px solid #ffffff;
+  border-top: 2px solid var(--color-text);
+  border-left: 2px solid var(--color-text);
 }

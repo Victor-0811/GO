@@ -22,8 +22,8 @@
   text-transform: uppercase;
   white-space: nowrap;
   color: #000000;
-  background-color: #FFFFFF;
-  border: 3px solid #ffffff;
+  background-color: var(--color-text);
+  border: 3px solid var(--color-text);
   border-radius: 8px;
   cursor: pointer;
   padding: 5px 15px;
@@ -39,7 +39,7 @@
 }
 
 .form__choose-item:active {
-  border: 3px solid #ffffff;
+  border: 3px solid var(--color-text);
   background-color: #6C0287;
   color: #ffffff;
 }
@@ -84,7 +84,7 @@
   display: block;
   width: 27px;
   height: 27px;
-  background-color: #ffffff;
+  background-color: var(--color-text);
   border-radius: 50%;
   margin: 0 10px 0 0;
   transition: opacity .2s;

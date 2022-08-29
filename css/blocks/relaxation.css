@@ -13,6 +13,10 @@
   flex: 0 1 380px;
 }
 
+.relaxation__item--translate {
+  transform: translateY(50px);
+}
+
 .relaxation__picture {
   position: relative;
   transition: transform .2s;

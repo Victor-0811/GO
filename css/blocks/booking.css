@@ -1,6 +1,6 @@
 
 .booking {
-  background-color: #440F51;
+  background-color: var(--accent-color);
 }
 
 .booking__title {

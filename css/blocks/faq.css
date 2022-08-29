@@ -4,7 +4,7 @@
 }
 
 .faq__item {
-  background-color: #fff;
+  background-color: var(--color-text);
   color: #1C1A1A;
   font-weight: 700;
   font-size: 24px;
@@ -56,11 +56,11 @@
 
 .faq__item:hover .faq__circle:before,
 .faq__item:hover .faq__circle:after {
-  background-color: #ffffff;
+  background-color: var(--color-text);
 }
 
 .faq__item:active .faq__circle {
-  background-color: #ffffff;
+  background-color: var(--color-text);
   border: 2px solid #6C0287;
 }
 
@@ -71,22 +71,22 @@
 }
 
 .faq__item--bg {
-  background-color: #440F51;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--color-text);
 }
 
 .faq__item--bg .faq__circle {
-  border: 2px solid #ffffff;
+  border: 2px solid var(--color-text);
 }
 
 .faq__item--bg .faq__circle:before,
 .faq__item--bg .faq__circle:after {
-  background-color: #ffffff;
+  background-color: var(--color-text);
 }
 
 .faq__item--bg:hover .faq__circle {
-  background-color: #ffffff;
-  border: 2px solid #ffffff;
+  background-color: var(--color-text);
+  border: 2px solid var(--color-text);
 }
 
 .faq__item--bg:hover .faq__circle:before,
@@ -96,12 +96,12 @@
 
 .faq__item--bg:active .faq__circle {
   background-color: #6C0287;
-  border: 2px solid #ffffff;
+  border: 2px solid var(--color-text);
 }
 
 .faq__item--bg:active .faq__circle:before,
 .faq__item--bg:active .faq__circle:after {
-  background-color: #ffffff;
+  background-color: var(--color-text);
   transform: rotate(180deg);
 }
 
