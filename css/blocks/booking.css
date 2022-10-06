@@ -1,8 +1,27 @@
 
 .booking {
   background-color: var(--accent-color);
+  padding: 80px 0 80px 0;
 }
 
 .booking__title {
   margin: 0 0 50px 0;
+}
+
+@media (max-width: 1024px) {
+  .booking {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .booking {
+    padding: 30px 0 30px 0;
+  }
 }

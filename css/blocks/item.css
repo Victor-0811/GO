@@ -1,17 +1,25 @@
 
 .item {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.item__person {
-  flex: 0 1 280px;
+  gap: 0 30px;
 }
 
 .item__avatar {
   width: 280px;
   overflow: hidden;
   border-radius: 50%;
+  position: relative;
+}
+
+.item__avatar:before {
+  content: "";
+  display: block;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 .item__img {
@@ -22,15 +30,62 @@
 
 .item__name {
   display: block;
-  line-height: 28px;
+  line-height: 1.4;
   text-align: center;
   padding: 10px 0 0 0;
 }
 
 .item__description {
-  flex: 0 1 700px;
-  line-height: 28px;
+  line-height: 1.4;
   padding: 60px 0 0 20px;
+}
+
+@media (max-width: 1024px) {
+  .item__avatar {
+    width: 172px;
+  }
+
+  .item {
+    font-size: 18px;
+  }
+
+  .item__description {
+    padding: 40px 0 0 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .item {
+    font-size: 16px;
+    align-items: center;
+  }
+
+  .item__avatar {
+    width: 153px;
+  }
+
+  .item__description {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    font-size: 12px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+
+  }
+
+  .item__name {
+    font-size: 14px;
+  }
+
+  .item__avatar {
+    width: 86px;
+  }
+
 }
 
 

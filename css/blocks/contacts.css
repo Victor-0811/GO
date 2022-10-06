@@ -3,7 +3,7 @@
 .contacts {
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.16;
 }
 
 .contacts__item {
@@ -12,11 +12,27 @@
   gap: 30px;
 }
 
-.contacts__text {
-  display: inline-block;
-  vertical-align: middle;
-}
-
 .contacts__item:not(:last-child) {
   margin: 0 0 35px 0;
+}
+
+@media (max-width: 768px) {
+  .contacts__item {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contacts {
+    font-size: 14px;
+  }
+
+  .contacts__item:not(:last-child) {
+    margin: 0 0 10px 0;
+  }
+
+  .contacts__img {
+    width: 20px;
+    height: 20px;
+  }
 }
