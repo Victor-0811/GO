@@ -16,8 +16,19 @@
   margin: 0 0 45px 0;
 }
 
+.form__choose-radio {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 .form__choose-item {
   flex: 0 1 250px;
+  display: flex;
+}
+
+.form__choose-btn {
+  flex: 1;
   font-weight: 700;
   font-size: 30px;
   line-height: 1.33;
@@ -33,24 +44,24 @@
   transition: background-color .3s, border .3s;
 }
 
-.form__choose-item:hover {
+.form__choose-btn:hover {
   border: 3px solid #640AA3;
 }
 
-.form__choose-item:focus {
+.form__choose-btn:focus {
   border: 3px solid #640AA3;
 }
 
-.form__choose-item:active {
+.form__choose-btn:active {
   border: 3px solid var(--color-text);
   background-color: #6C0287;
   color: #ffffff;
 }
 
-.form__choose-radio {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+.form__choose-item input[type=radio]:checked + span {
+  border: 3px solid var(--color-text);
+  background-color: #6C0287;
+  color: #ffffff;
 }
 
 .form__input {
@@ -322,9 +333,12 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .form__choose-item {
+    flex: 0 1 180px;
+  }
+
+  .form__choose-btn {
     font-size: 20px;
     padding: 10px 20px;
-    flex: 0 1 180px;
   }
 
   .form__btn {
@@ -339,9 +353,11 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .form__choose-item {
-    font-size: 16px;
-    padding: 10px 20px;
     flex: 0 1 150px;
+  }
+
+  .form__choose-btn {
+    font-size: 16px;
   }
 
   .form__datetime {
@@ -402,7 +418,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .form__choose-item {
     flex: 1 1 25%;
-    width: 130px;
+  }
+
+  .form__choose-btn {
     font-size: 14px;
     padding: 6px 20px;
   }
